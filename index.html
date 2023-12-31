@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Conversion</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>String Conversion</h1>
+
+    <form>
+        <div class="input-container">
+            <input type="text" id="inputText" placeholder="Insert string">
+            <button class="delete-button" onclick="deleteInput()">X</button>
+        </div>
+
+        <div class="button-container">
+            <button type="button" onclick="convertToUpperCase()">Convert to Uppercase</button>
+            <button type="button" onclick="convertToLowerCase()">Convert to Lowercase</button>
+            <button type="button" onclick="capitalizeFirstLetters()">Capitalize First Letters</button>
+            <button type="button" onclick="convertToCamelCase()">Convert to Camel Case</button>
+            <button type="button" onclick="convertToSnakeCase()">Convert to Snake Case</button>
+            <button type="button" onclick="convertToPascalCase()">Convert to Pascal Case</button>
+        </div>
+    </form>
+
+    <div id="outputText"></div>
+
+    <button class="copy-button" onclick="copyToClipboard()">Copy to Clipboard</button>
+
+    <footer class="footer">
+        Made with love by Dean Seth McAfee Grand Cherokee ©
+    </footer>
+</body>
+</html>

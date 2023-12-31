@@ -1,0 +1,188 @@
+*{
+    background-color: #dfe9d9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .label-container {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .delete-button {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    padding: 6px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    color: #ff0000;
+  }
+  
+  .delete-button:hover {
+    color: #dd0000;
+    background-color: transparent;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    flex: 1 0 200px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #outputText {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .copy-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .copy-button:hover {
+    background-color: #45a049;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    form {
+      max-width: 300px;
+    }
+  
+    button {
+      flex-basis: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    form {
+      max-width: 250px;
+    }
+  }
+/* now make the delete button more beautiful*/
+.delete-button {
+    position: absolute;
+    top: 50%;
+    right: -27px;
+    transform: translateY(-50%);
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    color: #ff0000;
+    transition: color 0.3s ease;
+  }
+  
+  .delete-button:before,
+  .delete-button:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: #ff0000;
+    transform: translate(-50%, -50%);
+  }
+  
+  .delete-button:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .delete-button:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
+  
+  
+  @media screen and (max-width: 600px) {
+    .delete-button {
+      padding: 8px;
+    }
+  
+    .delete-button:before,
+    .delete-button:after {
+      width: 16px;
+      height: 0.5px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .delete-button {
+      padding: 6px;
+    }
+  
+    .delete-button:before,
+    .delete-button:after {
+      width: 12px;
+      height: 1px;
+    }
+  }
+  
